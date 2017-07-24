@@ -150,7 +150,8 @@ module AjaxDatatablesRails
       when :oracle then 'VARCHAR2(4000)'  
       when :pg then 'VARCHAR'
       when :mysql2 then 'CHAR'
-      when :sqlite, :sqlite3, :mssql then 'TEXT'
+      when :mssql then 'VARCHAR(255)'
+      when :sqlite, :sqlite3 then 'TEXT'
       else
         'VARCHAR'
       end
